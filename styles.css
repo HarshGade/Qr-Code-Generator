@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.container{
+    width: 400px;
+    padding: 2vw 3vw; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.container p{
+    font-size: 1vw;
+    font-weight: 700;
+    margin-bottom: 1.2vw;
+}
+.container input {
+    width: 100%;
+    padding: 1vw;
+    border: 1px solid #dadada;
+    outline: none;
+    margin-bottom: 2vw;
+}
+.container button{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 1vw;
+    background-color: rgb(70, 81, 180);
+    color: #fff;
+    font-size: 1.1vw;
+    font-weight: 700;
+    margin-bottom: 1vw;
+}
+.container button:hover{
+    cursor: pointer;
+}
+
+/*  know we need to center/style the QR code that will be generated*/
+
+#qrBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  first the image should not be visble hence we will keep its display none */
+/* when the button gets click that Generatee the Qr code then only the image should get visible */
+/* that logic is written in JS */
+#qrBox img{
+    opacity: 0;
+}

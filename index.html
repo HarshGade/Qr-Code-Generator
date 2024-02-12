@@ -1,0 +1,31 @@
+<!-- Here we are going to make an Qr code generator which takes input and on the basis of that input it generates an QR Code which on scanning will give the information that we give in the input  -->
+<!-- Here we will use an API to generate QR Code  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <div id="page1">
+            <div class="container">
+                <p>Enter your text or URL</p>
+                <input type="text" placeholder="Text or URl" id="qrText">
+                <button onclick="generateQR()">Generate QR Code</button>
+                <div id="qrBox">
+                    <!-- here the QR code will be displayed -->
+                    <img src="" id="qrImage">
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
+
+<!-- Search qr code api then copy link paste in another browser to test in url change the text the QR code will be regenrated and then when we scan that QR code it show out text  -->
+<!-- We will be using that link in ou javascriot code -->
